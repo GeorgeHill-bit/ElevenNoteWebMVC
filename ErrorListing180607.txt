@@ -1,0 +1,12 @@
+Find all "ApplicationDbContext", Subfolders, Find Results 1, Entire Solution, ""
+  C:\DotNetProjects\ElevenNote\ElevenNote.WebMVC\App_Start\IdentityConfig.cs(46):            var manager = new ApplicationUserManager(new UserStore<ApplicationUser>(context.Get<ApplicationDbContext>()));
+  C:\DotNetProjects\ElevenNote\ElevenNote.WebMVC\App_Start\Startup.Auth.cs(19):            app.CreatePerOwinContext(ApplicationDbContext.Create);
+  C:\DotNetProjects\ElevenNote\ElevenNote.Services\NoteService.cs(28):            using (var ctx = new ApplicationDbContext())
+  C:\DotNetProjects\ElevenNote\ElevenNote.Services\NoteService.cs(36):            using (var ctx = new ApplicationDbContext())
+  C:\DotNetProjects\ElevenNote\ElevenNote.Data\IdentityModels.cs(23):    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+  C:\DotNetProjects\ElevenNote\ElevenNote.Data\IdentityModels.cs(25):        public ApplicationDbContext()
+  C:\DotNetProjects\ElevenNote\ElevenNote.Data\IdentityModels.cs(30):        public static ApplicationDbContext Create()
+  C:\DotNetProjects\ElevenNote\ElevenNote.Data\IdentityModels.cs(32):            return new ApplicationDbContext();
+  C:\DotNetProjects\ElevenNote\ElevenNote.Data\Migrations\Configuration.cs(8):    internal sealed class Configuration : DbMigrationsConfiguration<ElevenNote.Data.ApplicationDbContext>
+  C:\DotNetProjects\ElevenNote\ElevenNote.Data\Migrations\Configuration.cs(15):        protected override void Seed(ElevenNote.Data.ApplicationDbContext context)
+  Matching lines: 10    Matching files: 5    Total files searched: 92
