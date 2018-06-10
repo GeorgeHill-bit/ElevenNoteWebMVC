@@ -10,13 +10,14 @@ namespace ElevenNote.Models
     public class NoteListItem
     {
         public int NoteId { get; set; }
+
         public string Title { get; set; }
+
+        //[UIHint("Starred")]
+        //public bool IsStarred { get; set; }
 
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
-
-        [Display(Name = "Modified")]
-        public DateTimeOffset ModifiedUtc { get; set; }
 
         public override string ToString() => Title;
 

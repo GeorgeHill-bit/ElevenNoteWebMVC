@@ -9,18 +9,15 @@ namespace ElevenNote.Models
 {
     public class NoteCreate
     {
-        private string _content;
-
         [Required]
-        [MinLength(3, ErrorMessage = "Please enter at least 3 characters.")]
-        [MaxLength(100, ErrorMessage = "There are too many characters in this field.")]
+        [MinLength(3, ErrorMessage = "Please enter at least three characters.")]
+        [MaxLength(128)]
         public string Title { get; set; }
 
-
+        [Required]
         [MaxLength(8000)]
-        public string Content { get; set; }  
+        public string Content { get; set; }
 
         public override string ToString() => Title;
-
     }
 }
