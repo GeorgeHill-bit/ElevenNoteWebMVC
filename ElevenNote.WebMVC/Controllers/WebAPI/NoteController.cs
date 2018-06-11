@@ -10,6 +10,8 @@ using System.Web.Http;
 
 namespace ElevenNote.WebMVC.Controllers.WebAPI
 {
+    [Authorize]
+    [RoutePrefix("api/Note")]
     public class NoteController : ApiController
     {
         public bool SetStarState(int noteId, bool newState)
