@@ -74,6 +74,14 @@
     <Compile Include="Migrations\201806111602133_IsStarred.Designer.cs">
       <DependentUpon>201806111602133_IsStarred.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806111959062_Note.cs" />
+    <Compile Include="Migrations\201806111959062_Note.Designer.cs">
+      <DependentUpon>201806111959062_Note.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806112004042_ tes.cs" />
+    <Compile Include="Migrations\201806112004042_ tes.Designer.cs">
+      <DependentUpon>201806112004042_ tes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,6 +96,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806111602133_IsStarred.resx">
       <DependentUpon>201806111602133_IsStarred.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806111959062_Note.resx">
+      <DependentUpon>201806111959062_Note.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806112004042_ tes.resx">
+      <DependentUpon>201806112004042_ tes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
